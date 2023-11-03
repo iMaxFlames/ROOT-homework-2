@@ -6,11 +6,15 @@
 class Momentum : public TObject {
     public:
         Momentum();
-        Momentum(Int_t variable);
+        Momentum(Double_t px, Double_t py, Double_t pz);
         virtual ~Momentum();
 
+        Double_t Magnitude();
+
     private:
-        Int_t variable;
+        Double_t px;
+        Double_t py;
+        Double_t pz;
 
 
     ClassDef(Momentum, 1);
