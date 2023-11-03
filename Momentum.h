@@ -11,6 +11,18 @@ class Momentum : public TObject {
 
         Double_t Magnitude();
 
+        Double_t get_px(){
+            return px;
+        }
+
+        Double_t get_py(){
+            return py;
+        }
+
+        Double_t get_pz(){
+            return pz;
+        }
+
     private:
         Double_t px;
         Double_t py;
